@@ -7,7 +7,7 @@ public class Test {
 
     public static void testBank() {
         Account a1 = new SavingAccount(1, "Ohm", 100000.00);
-        Account a2 = new CurrentAccount(1, "Ohm", 5000.00, 100.00);
+        Account a2 = new CurrentAccount(2, "Ohm", 5000.00, 100.00);
         Bank b1 = new Bank("Oomsin");
         //test openAccount
         b1.openAccount(a1);
@@ -24,6 +24,6 @@ public class Test {
         System.out.println("Withdraw: " + a1.getBalance());
         //test getAccount
         b1.openAccount(a2);
-        b1.getAccount(1, null)
+        System.out.println(b1.getAccount(a1.getAccountNumber(), a1.getAccountType()));
     }
 }
