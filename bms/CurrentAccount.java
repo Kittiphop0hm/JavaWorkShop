@@ -6,6 +6,7 @@ public class CurrentAccount implements Account {
     private double balance;
     private double minimum;
     private String accountType;
+    
     public CurrentAccount(int accountNumber, String accountName, double balance, double minimum) {
         if (accountNumber <= 0 || accountName == null || accountName.isBlank() || balance <= 0 || minimum <= 0) throw new RuntimeException();
         this.minimum = minimum;
@@ -13,6 +14,7 @@ public class CurrentAccount implements Account {
         this.accountName = accountName;
         this.balance = balance;
     }
+
     @Override
     public void deposit(double amount) {
         if (amount >= 1) {
