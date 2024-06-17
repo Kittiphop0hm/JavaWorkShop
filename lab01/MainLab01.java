@@ -5,6 +5,7 @@ import lab01.*;
 public class MainLab01 {
     public static void main(String[] args) {
         testCircle();
+        testExtandClass();
     }
 
     public static void testCircle() {
@@ -17,5 +18,9 @@ public class MainLab01 {
         System.out.println("Area: " + c2.getArea());
         System.out.println(c2);
     }
-    
+
+    public static void testExtandClass() {
+        Rectangle r1 = new Rectangle("Java");
+        r1.doSomeThing();
+    }
 }
