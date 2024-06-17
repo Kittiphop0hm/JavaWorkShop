@@ -16,4 +16,9 @@ public class Circle {
     public double getArea() {
         return Math.PI * (2 * this.radius);
     }
+
+    @Override
+    public String toString() {
+        return "Circle : { Radius: " + radius + " }";
+    }
 }
