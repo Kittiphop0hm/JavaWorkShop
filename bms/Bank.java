@@ -11,9 +11,7 @@ public class Bank {
     }
 
     public void listAccounts() {
-        for (Account account : arrayList) {
-            System.out.println(account);
-        }
+        System.out.println(arrayList);
     }
 
     public void openAccount(Account account) {

@@ -11,6 +11,7 @@ public class SavingAccount implements Account {
         this.accountNumber = accountNumber;
         this.accountName = accountName;
         this.balance = balance;
+        this.accountType = "Saving Account";
     }
 
     @Override

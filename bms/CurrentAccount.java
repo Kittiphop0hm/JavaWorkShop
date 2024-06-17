@@ -13,6 +13,7 @@ public class CurrentAccount implements Account {
         this.accountNumber = accountNumber;
         this.accountName = accountName;
         this.balance = balance;
+        this.accountType = "Current Account";
     }
 
     @Override
